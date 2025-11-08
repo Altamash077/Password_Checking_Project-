@@ -1,9 +1,6 @@
 from common_pas import password_common
-from pas_strenght import password_checking
-user_password = input("Enter password: ")
-password_checking(user_password)
-if password_common(user_password, 'user.csv'):
-    print("Password is Common....Found Online")
-else:
-    print("NOT A COMMON PASSWORD")
+from funtions import strengt_of_password
+user_password=input("ENTER YOUR PASSWORD TO CHECK ITS STRENGTH: ")
+strength_score=strengt_of_password(user_password)
+print(f"YOUR PASSWORD STRENGTH SCORE IS: {strength_score}/8")
 
